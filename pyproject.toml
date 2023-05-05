@@ -1,3 +1,41 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta:__legacy__"
+
+[project]
+name = "example_package"
+authors = [
+    {name = "Albert Stepp", email = "albert.steppi@gmail.com"},
+]
+description = "Experiment with interactive documentation for Python projects."
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+version = "0.0.0"
+dependencies = [
+    "scipy",
+]
+
+[project.optional-dependencies]
+doc = [
+    "sphinx!=4.1.0",
+    "pydata-sphinx-theme==0.9.0",
+    "sphinx-design>=0.2.0",
+    "matplotlib>2",
+    "numpydoc",
+    "jupytext",
+    "myst-nb",
+    "pooch",
+    "jupyterlite-sphinx",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["example_package"]
+
+    
+	    
+
+
+
+
+

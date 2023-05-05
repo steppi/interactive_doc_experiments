@@ -1,3 +1,7 @@
+"""Wraps scipy's RBFInterpolator but replaces docstring."""
+
+
+
 from scipy.interpolate import RBFInterpolator
 
 
