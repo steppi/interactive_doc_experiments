@@ -155,4 +155,20 @@ class RBFInterpolator2(RBFInterpolator):
     >>> plt.show()
 
     """
+
+    def __call__(self, x):
+        """Evaluate the interpolant at `x`.
+
+        Parameters
+        ----------
+        x : (Q, N) array_like
+            Evaluation point coordinates.
+
+        Returns
+        -------
+        (Q, ...) ndarray
+            Values of the interpolant at `x`.
+
+        """
+        return super().__call__(self, x)
     

@@ -5,4 +5,3 @@ Example Package API
 
 .. automodule:: example_package.rbf
     :members:
-    :show-inheritance:
