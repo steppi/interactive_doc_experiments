@@ -12,7 +12,3 @@ This package contains
    :hidden:
 
    API reference <reference/index>
-
-
-
-
