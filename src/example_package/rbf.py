@@ -1,7 +1,6 @@
 """Wraps scipy's RBFInterpolator but replaces docstring."""
 
 
-
 from scipy.interpolate import RBFInterpolator
 
 
@@ -154,8 +153,12 @@ class RBFInterpolator2(RBFInterpolator):
     >>> fig.colorbar(p)
     >>> plt.show()
 
-    """
+    Methods
+    -------
+    __call__:
+      Evaluate the interpolant at `x`.
 
+    """
     def __call__(self, x):
         """Evaluate the interpolant at `x`.
 
@@ -171,4 +174,3 @@ class RBFInterpolator2(RBFInterpolator):
 
         """
         return super().__call__(self, x)
-    
