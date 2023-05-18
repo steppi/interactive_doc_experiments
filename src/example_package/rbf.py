@@ -112,6 +112,8 @@ class RBFInterpolator2(RBFInterpolator):
     `neighbors` argument can be specified to compute an RBF interpolant for
     each evaluation point using only the nearest data points.
 
+    .. todo:: Figure out how to embed Examples as jupyterlite notebook
+
     .. versionadded:: 1.7.0
 
     See Also

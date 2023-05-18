@@ -37,15 +37,16 @@ extensions = [
     'matplotlib.sphinxext.plot_directive',
     'jupyterlite_sphinx',
     'helloworld',
+    'todo',
 ]
 
-    
+todo_include_todos = True
+
 # Do some matplotlib config in case users have a matplotlibrc that will break
 # things
 matplotlib.use('agg')
 plt.ioff()
 
-    
 templates_path = ['_templates']
 exclude_patterns = []
 
