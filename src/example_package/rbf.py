@@ -7,6 +7,8 @@ from scipy.interpolate import RBFInterpolator
 class RBFInterpolator2(RBFInterpolator):
     """Radial basis function (RBF) interpolation in N dimensions.
 
+    .. helloworld::
+
     Parameters
     ----------
     y : (P, N) array_like

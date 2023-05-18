@@ -1,8 +1,12 @@
 import matplotlib
 import matplotlib.pyplot as plt
+import os
+import sys
 
 
 import example_package
+
+sys.path.append(os.path.abspath("./_ext"))
 
 
 # Configuration file for the Sphinx documentation builder.
@@ -32,6 +36,7 @@ extensions = [
     'sphinx_design',
     'matplotlib.sphinxext.plot_directive',
     'jupyterlite_sphinx',
+    'helloworld',
 ]
 
     
