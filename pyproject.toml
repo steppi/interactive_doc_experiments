@@ -25,7 +25,7 @@ doc = [
     "jupytext",
     "myst-nb",
     "pooch",
-    "jupyterlite-sphinx",
+    "sphinx-try-examples@git+https://github.com/steppi/sphinx-try-examples",
 ]
 
 [tool.setuptools.packages.find]

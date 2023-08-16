@@ -7,8 +7,6 @@ from scipy.interpolate import RBFInterpolator
 class RBFInterpolator2(RBFInterpolator):
     """Radial basis function (RBF) interpolation in N dimensions.
 
-    .. helloworld::
-
     Parameters
     ----------
     y : (P, N) array_like
@@ -112,8 +110,6 @@ class RBFInterpolator2(RBFInterpolator):
     `neighbors` argument can be specified to compute an RBF interpolant for
     each evaluation point using only the nearest data points.
 
-    .. todo:: Figure out how to embed Examples as jupyterlite notebook
-
     .. versionadded:: 1.7.0
 
     See Also
@@ -133,8 +129,10 @@ class RBFInterpolator2(RBFInterpolator):
 
     .. [4] http://pages.stat.wisc.edu/~wahba/stat860public/lect/lect8/lect8.pdf
 
-    
-    .. lite_examples::
+
+    Examples
+    --------
+    .. try_examples::
         Demonstrate interpolating scattered data to a grid in 2-D.
 
         >>> import numpy as np

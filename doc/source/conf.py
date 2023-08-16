@@ -36,8 +36,7 @@ extensions = [
     'sphinx_design',
     'matplotlib.sphinxext.plot_directive',
     'jupyterlite_sphinx',
-    'helloworld',
-    'todo',
+    'sphinx_try_examples',
 ]
 
 todo_include_todos = True
