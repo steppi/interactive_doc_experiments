@@ -28,6 +28,12 @@ jobs:
       run: make html
       working-directory: doc  # Adjust path to your docs directory if not in root
 
+    - name: Commit build
+      run: |
+        git add -f lite/build/*
+        git commit -m "Include lite/build directory"
+      working-directory: doc/build/html
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
