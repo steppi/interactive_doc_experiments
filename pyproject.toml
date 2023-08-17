@@ -26,6 +26,7 @@ doc = [
     "myst-nb",
     "pooch",
     "sphinx-try-examples@git+https://github.com/steppi/sphinx-try-examples",
+    "jupyterlite-pyodide-kernel",
 ]
 
 [tool.setuptools.packages.find]
