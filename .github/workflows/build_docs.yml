@@ -28,21 +28,10 @@ jobs:
       run: make html
       working-directory: doc  # Adjust path to your docs directory if not in root
 
-    - name: Commit build
-      run: |
-        git config user.name "Github Actions"
-        git config user.email "actions@github.com"
-        git add -f lite/build/*
-        git commit -m "Include lite/build directory"
-      working-directory: doc/build/html
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy pages
+      uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: doc/build/html  # Adjust path to the built HTML docs
-        user_name: 'github-actions'
-        user_email: 'github-actions@github.com'
-        keep_files: true
-        allow_empty_commit: false
-
+        folder: doc/build/html
+        repository-name: steppi/interactive_doc_experiments
+        branch: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
